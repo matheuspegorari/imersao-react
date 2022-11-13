@@ -44,7 +44,9 @@ export default function Search({valorFiltro, setValorFiltro}) {
     const setValorBusca = setValorFiltro
     return (
         <StyledSearch>
-            <input type="text" onChange={(e)=>setValorBusca(e.target.value)} value={valorBusca}/>
+            <input type="text" onChange={
+              (e)=>setValorBusca(e.target.value)
+              } value={valorBusca}/>
             
             <button>
                 🔎
