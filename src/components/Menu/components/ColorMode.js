@@ -2,21 +2,21 @@ import React from "react";
 
 export const ColorModeContext = React.createContext({
     mode: "",
-    setMode: () => {alert("Configure me first!")},
-    toggleMode: () => {alert("Configure me first!")}
+    setMode: () => { alert("Configure me first!") },
+    toggleMode: () => { alert("Configure me first!") }
 })
 
-export default function ColorModeProvider(props){
+export default function ColorModeProvider(props) {
     const [mode, setMode] = React.useState(props.initialMode)
 
-    function toggleMode(){
-        if(mode == "dark") setMode("light")
-        if(mode == "light") setMode("dark")
+    function toggleMode() {
+        if (mode == "dark") setMode("light")
+        if (mode == "light") setMode("dark")
     }
 
-    return(
+    return (
         //entender porque ele ta ignorando isso
-        <ColorModeContext.Provider value={{mode: mode, setMode: setMode, toggleMode: toggleMode}}>
+        <ColorModeContext.Provider value={{ mode: mode, setMode: setMode, toggleMode: toggleMode }}>
             {props.children}
         </ColorModeContext.Provider>
     )

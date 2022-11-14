@@ -26,13 +26,13 @@ const StyledMenu = styled.header`
   }
 `;
 
-export default function Menu({valorFiltro, setValorFiltro}) {
+export default function Menu({ valorFiltro, setValorFiltro }) {
   return (
     <StyledMenu>
       <div>
         <Logo />
       </div>
-      <Search valorFiltro={valorFiltro} setValorFiltro={setValorFiltro}/>
+      <Search valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
       <DarkModeSwitch />
     </StyledMenu>
   );

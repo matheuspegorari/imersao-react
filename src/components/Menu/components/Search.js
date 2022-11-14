@@ -39,18 +39,18 @@ const StyledSearch = styled.div`
 // Search
 // Informação sempre desce
 
-export default function Search({valorFiltro, setValorFiltro}) {   
-    const valorBusca = valorFiltro
-    const setValorBusca = setValorFiltro
-    return (
-        <StyledSearch>
-            <input type="text" onChange={
-              (e)=>setValorBusca(e.target.value)
-              } value={valorBusca}/>
-            
-            <button>
-                🔎
-            </button>
-        </StyledSearch>
-    )
+export default function Search({ valorFiltro, setValorFiltro }) {
+  const valorBusca = valorFiltro
+  const setValorBusca = setValorFiltro
+  return (
+    <StyledSearch>
+      <input type="text" onChange={
+        (e) => setValorBusca(e.target.value)
+      } value={valorBusca} />
+
+      <button>
+        🔎
+      </button>
+    </StyledSearch>
+  )
 }
